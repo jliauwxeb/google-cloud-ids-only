@@ -47,8 +47,8 @@ In this section, we will walk through how to deploy the environment using Terraf
 1. In cloud shell, copy and paste the following commands to clone the repository and to apply the Terraform plan.
 
 ```
-git clone https://github.com/wwce/gcp-tf-cloud-ids-lab
-cd gcp-tf-cloud-ids-lab
+git clone https://github.com/jliauwxeb/gcp-tf-cloud-ids-demo
+cd gcp-tf-cloud-ids-demo
 terraform init
 terraform apply
 ```
