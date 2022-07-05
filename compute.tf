@@ -3,7 +3,7 @@
 # Kali Linux VM
 resource "google_compute_instance" "kali" {
   name         = "${local.prefix}-kali"
-  machine_type = "n1-standard-1"
+  machine_type = "e2-micro"
   zone         = data.google_compute_zones.main.names[0]
   tags         = ["kali"]
   boot_disk {
@@ -25,7 +25,7 @@ resource "google_compute_instance" "kali" {
 # Jenkins VM
 resource "google_compute_instance" "jenkins" {
   name         = "${local.prefix}-jenkins"
-  machine_type = "n1-standard-1"
+  machine_type = "e2-micro"
   zone         = data.google_compute_zones.main.names[0]
   tags         = ["jenkins"]
   boot_disk {
@@ -46,7 +46,7 @@ resource "google_compute_instance" "jenkins" {
 # Juice Shop VM
 resource "google_compute_instance" "juice_shop" {
   name         = "${local.prefix}-juice-shop"
-  machine_type = "n1-standard-1"
+  machine_type = "e2-micro"
   zone         = data.google_compute_zones.main.names[0]
   tags         = ["juice-shop"]
   boot_disk {
