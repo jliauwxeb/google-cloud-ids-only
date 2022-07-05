@@ -6,6 +6,8 @@ provider "google" {
   #credentials = "your_credentials.json"
 }
 
+
+
 resource "random_string" "main" {
   length    = 4
   min_lower = 4
@@ -19,6 +21,9 @@ data "google_compute_zones" "main" {
 locals {
   prefix = random_string.main.result
 }
+
+
+# Enable required APIs
 
 resource "google_project_service" "service_networking" {
   #project = var.project_id
