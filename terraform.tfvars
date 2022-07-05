@@ -1,7 +1,7 @@
 
 #project_id                = ""
 #public_key_path           = "~/.ssh/gcp-demo.pub"
-region                    = "us-east1"
+region                    = "europe-west4"
 subnet_cidrs              = ["192.168.0.0/24", "192.168.1.0/24", "192.168.11.0/24"]
 service_scopes            = ["cloud-platform"]
 
